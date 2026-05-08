@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="recipefevicon.png" type="image/x-icon">
+    
+</head>
+<body style="background-color: black;">
+    <header>Recipe Book</header>
+    <div id="totalFavCalories">Total Favorite Calories: </div>
+    <form id="recipeForm" action="">
+        <input type="text" placeholder="Recipe Name" class="RecipeClass" id="recipeName">
+        <input type="text" placeholder="Ingredients Name" class="RecipeClass" id="recipeIngredient">
+        <input type="number" placeholder="Calories" class="RecipeClass" id="recipeCalories">
+        <button class="btn" type="button" onclick="clickForm()">Add Recipe</button>
+    </form>
+    <div id="searchId">
+        <input type="search" name="search" class="RecipeClass" placeholder="🔎 Search by name" id="search">
+    </div>
+    <div id="recipesContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
